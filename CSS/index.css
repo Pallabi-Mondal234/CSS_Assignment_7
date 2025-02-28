@@ -1,0 +1,403 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    box-sizing: border-box;
+    background-color: #fdfdff;
+}
+a{
+    text-decoration: none;
+}
+ul li{
+    list-style: none;
+}
+/* header section strats here */
+header{
+    background-color: white;
+}
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* .nav-bar img{
+    border-right: 1px solid black;
+} */
+.nav-list{
+    display: flex;
+    width: 62%;
+}
+.nav-list li{
+    list-style: none;
+    border-bottom: 3px solid transparent;
+}
+.nav-list li:first-child{
+    border-left: 1px solid #dfe1e4;
+}
+.nav-list li a{
+    color: black;
+    opacity: 0.7;
+    padding: 25px 25px 10px 25px;
+    /* padding-bottom: 10px; */
+    display: inline-block;
+}
+.nav-list li:hover{
+    border-bottom: 3px solid #407ec9;
+}
+.order-sec>:first-child{
+    color: black;
+    font-weight: 500;
+    margin-right: 20px;
+    position: relative;
+}
+.order-sec>:first-child:hover{
+    color: #4d8dda;
+}
+.order-sec>:first-child::before{
+    content: "";
+    background: url("../assests/icons/download\ \(1\).svg") no-repeat center;
+    position: absolute;
+    background-size: cover;
+    height: 20px;
+    width: 20px;
+    top: 2%;
+    left: -25%;
+}
+.button{
+    background-color: #4d8dda;
+    color: white;
+    font-weight: 500;
+    padding: 20px 40px;
+    border-radius: 8px;
+    position: relative;
+}
+.button:hover{
+    background-color: #2A3749;
+    color: white;
+}
+.button::after{
+    content: "";
+    background: url("../assests/icons/download\ \(13\).svg") no-repeat center;
+    position: absolute;
+    filter: invert(1);
+    background-size: cover;
+    height: 13px;
+    width: 13px;
+    top: 39%;
+    right: 10%;
+}
+/* homepage section starts here */
+.homepage{
+    height: 500px;
+    background-color: #fbfcff;
+}
+.absolute-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,50%);
+    width: 50rem;
+    text-align: center;
+}
+.absolute-content h1,h3{
+    font-size: 4rem;
+}
+.absolute-content p{
+    padding: 20px 0;
+}
+.white-btn{
+    background-color: white;
+    color: black;
+    font-weight: 500;
+    box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.2), 0 15px 27px 0 #f1f2f6;
+}
+.white-btn:hover{
+    background-color: #4d8dda;
+    color: white;
+}
+.white-btn::after{
+    filter: invert(0);
+}
+.white-btn::after:hover{
+    filter: invert(1);
+}
+/* poster section starts here */
+.poster{
+    background: url("../assests/Group-1024-1.png") no-repeat center;
+    background-size: contain;
+    height: 700px;
+    background-color: #fdfdff;
+}
+/* service section starts here */
+
+h2{
+    text-align: center;
+    padding: 30px 0;
+    font-size: 3rem;
+    width: 45rem;
+    margin: 0 auto;
+}
+.quality{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 17%;
+    text-align: center;
+    padding: 30px 0;
+}
+.quality h4{
+    padding: 20px 0;
+}
+.card{
+    padding: 30px;
+    border: none;
+    box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.2), 0 15px 27px 0 #f1f2f6;
+}
+.card h4{
+    padding-top: 20px;
+}
+.card a{
+    position: relative;
+    color: black;
+}
+.card a:after{
+    content: "";
+    background: url("../assests/icons/download\ \(13\).svg") no-repeat center;
+    position: absolute;
+    fill: white;
+    background-size: cover;
+    height: 20px;
+    width: 20px;
+    top: 13%;
+    right: 35%;
+}
+.card a:hover{
+    color:#4d8dda;
+}
+/* delivery section starts here */
+.drinking-img{
+    position: absolute;
+    background: url("../assests/Rectangle-259-1.png") no-repeat center;
+    background-size: cover;
+    min-height: 500px;
+    width: 500px;
+}
+/* delivery-feature section starts here */
+.delivery-features{
+    padding: 40px 0;
+}
+.delivery-feature{
+    padding: 4rem 0;
+}
+.delivery-feature-content{
+    padding: 30px 40px;
+}
+.delivery-feature-content h3{
+    font-size: 2.5rem;
+    padding: 20px 0;
+    width: 26rem;
+}
+.delivery-feature-content ul li{
+    font-size: 1.3rem;
+    font-weight: 500;
+    position: relative;
+    padding: 10px 30px;
+}
+.delivery-feature-content ul li::before{
+    content: "";
+    background: url("../assests/icons/download\ \(12\).svg") no-repeat center;
+    position: absolute;
+    fill: white;
+    background-size: cover;
+    height: 13px;
+    width: 13px;
+    top: 39%;
+    left: 0;
+}
+.light-text{
+    padding: 10px 30px;
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: #6b7481;
+}
+.delivery-feature-img{
+    padding: 30px 0px;
+    padding-left: 30px;
+} 
+.delivery-feature-img img{
+    width: auto;
+}
+/* free trial section starts here */
+.free-trial{
+    background: url("../assests/Rectangle-1.png")no-repeat center;
+    background-size: cover;
+    height: 700px;
+}
+.free-trial h3,p{
+    color: white;
+}
+.free-trial .absolute-content{
+    left: 50%;
+    transform: translate(-50%,73%);
+}
+/* order section starts here */
+.order{
+    background-color: #FAFBFF;
+}
+.order-wrapper{
+    padding: 7rem 0;
+}
+.expert-part img{
+    border-radius: 50%;
+}
+h5{
+    font-size: 2.5rem;
+}
+.expert-part h5{
+    width: 10rem;
+}
+.expert-section h6{
+    font-size: 1.2rem;
+}
+.num{
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: black;
+    padding-left: 38px;
+    position: relative;
+}
+.num::before{
+    content: "";
+    background: url("../assests/icons/download\ \(1\).svg") no-repeat center;
+    position: absolute;
+    background-size: cover;
+    height: 30px;
+    width: 30px;
+    top: 23%;
+    left: 0;
+}
+.order-form form{
+    display: flex;
+    flex-direction: column;
+}
+input::placeholder{
+    color: black;
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+.order-form form p{
+   color: #2A3749;
+}
+.order-form form label{
+    margin-top: 10px;
+}
+input{
+    border: none;
+    padding: 20px 30px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+.order-form form input[type="radio"],
+.order-form form input[type="checkbox"]{
+   accent-color: red;
+}
+.order-form form a{
+    width: 33%;
+    margin: 20px 0 10px 0;
+}
+.agree-section #checkbox{
+    margin-top: -5px;
+}
+.agree-section p a{
+    text-decoration: underline;
+}
+.agree-section p a:hover{
+    color: #2A3749;
+}
+/* footer section starts here */
+footer{
+    background-color: #2A3749;
+    height: 900px;
+}
+footer .company-info,
+footer .footer-cols{
+    margin-top: 6rem;
+    padding-right: 50px;
+}
+footer .company-info p{
+    width: 24rem;
+    line-height: 2;
+    font-size: 1.2rem;
+    font-weight: 200;
+}
+footer .company-info>:nth-child(3){
+    width: 12rem;
+}
+footer .company-info>:nth-child(4){
+    font-size: 1.5rem;
+    color: white;
+    margin-bottom: 40px;
+}
+footer .company-info>:nth-child(5){
+    text-decoration: underline;
+    color: white;
+}
+footer .company-info>:nth-child(5):hover,
+footer .company-info>:nth-child(4):hover,
+.num:hover{
+    color:#4d8dda;
+}
+footer .footer-cols{
+    padding-right: 0;
+}
+footer .footer-cols input{
+    width: 95%;
+}
+footer .footer-cols .input-section::after{
+    content: "";
+    background: url("../assests/icons/download\ \(9\).svg") no-repeat center;
+    position: absolute;
+    filter: invert(58%) sepia(14%) saturate(7500%) hue-rotate(191deg) brightness(92%) contrast(85%);
+    background-size: cover;
+    height: 30px;
+    width: 30px;
+    top: 23%;
+    right: 9%;
+}
+footer .footer-cols h2{
+    font-size: 2.5rem;
+    text-align: left;
+    color: white;
+}
+footer .footer-cols .first-p a{
+    text-decoration: underline;
+    color: white;
+}
+footer .footer-col{
+    width: 33%;
+}
+footer .footer-col h4{
+    color: white;
+    font-size: 1.2rem;
+    padding-bottom: 15px;
+}
+footer .footer-col ul {
+    padding-left: 0;
+}
+footer .footer-col ul li {
+    padding: 8px 0;
+}
+footer .footer-col ul li a, .first-p{
+    color: white;
+    font-weight: 200;
+}
+footer .footer-col ul li a:hover,
+footer .footer-cols .first-p a:hover{
+    color: #4d8dda;
+}
+footer .footer-cols p a:hover{
+    color: white;
+}
+
